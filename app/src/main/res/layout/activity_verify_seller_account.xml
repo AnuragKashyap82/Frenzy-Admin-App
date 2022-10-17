@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F3F3"
+    tools:context=".VerifySellerAccountActivity">
+
+    <RelativeLayout
+        android:id="@+id/topRl"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_back_black"
+            android:backgroundTint="@color/white"
+            android:layout_marginStart="16dp"
+            android:layout_centerVertical="true"
+            android:padding="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seller Account Verification"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/backBtn"
+            android:textColor="@color/white"
+            android:layout_marginStart="24dp"/>
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topRl">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp">
+
+            <LinearLayout
+                android:id="@+id/shopNmaeLl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="4dp"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Shop Name:"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:id="@+id/shopNameTv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:text="Big Mart"
+                    android:layout_weight="3"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sellerNameLl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="4dp"
+                android:weightSum="4"
+                android:layout_below="@id/shopNmaeLl">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Seller Name:"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:id="@+id/sellerNameTv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:text="Big Mart"
+                    android:layout_weight="3"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/emailLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="4dp"
+                android:weightSum="4"
+                android:layout_below="@id/sellerNameLl">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Seller Email:"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:id="@+id/emailTv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:text="Big Mart"
+                    android:layout_weight="3"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/phoneNoLl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="4dp"
+                android:weightSum="4"
+                android:layout_below="@id/emailLL">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Phone No:"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:id="@+id/phoneNoTv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:text="Big Mart"
+                    android:layout_weight="3"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/addressLl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="4dp"
+                android:weightSum="4"
+                android:layout_below="@id/phoneNoLl">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Address:"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:id="@+id/addressTv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:text=""
+                    android:layout_weight="3"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pincodeLl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="4dp"
+                android:weightSum="4"
+                android:layout_below="@id/addressLl">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Pincode:"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:id="@+id/pinCodeTv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:text=""
+                    android:layout_weight="3"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cityLl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="4dp"
+                android:weightSum="4"
+                android:layout_below="@id/pincodeLl">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="City:"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:id="@+id/cityTv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:text=""
+                    android:layout_weight="3"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/addressProofCard"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:cardCornerRadius="12dp"
+                android:elevation="7dp"
+                android:layout_below="@id/cityLl"
+                android:background="@color/white"
+                android:layout_margin="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/verifiedIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_verified_black"
+                        app:tint="@color/successGreen"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginStart="2dp"
+                        android:background="@drawable/shape_circle_01"
+                        android:backgroundTint="@color/gray01"
+                        android:padding="12dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/verifiedIcon"
+                        android:layout_marginStart="8dp"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        android:textColor="@color/black"
+                        android:text="Address Proof"
+                        android:layout_marginTop="16dp"/>
+
+                    <ImageView
+                        android:id="@+id/addressIv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/verifiedIcon"
+                        android:layout_marginTop="3dp"
+                        app:tint="@color/gray01"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_gallery_blac"/>
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/bankTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/addressProofCard"
+                android:layout_margin="16dp"
+                android:text="Bank Details"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/accountHolderLl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="4dp"
+                android:weightSum="4"
+                android:layout_below="@id/bankTv">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Account Holder Name:"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:id="@+id/accountHolderNameTv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textSize="14dp"
+                    android:text="Anurag Kashyap"
+                    android:layout_weight="3"
+                    android:layout_marginStart="4dp"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/accountNoLl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:weightSum="4"
+                android:layout_below="@id/accountHolderLl">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Account No:"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:id="@+id/accountNoTv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textSize="14dp"
+                    android:text="40413960555"
+                    android:layout_weight="3"
+                    android:layout_marginStart="4dp"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/passbookCardView"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:cardCornerRadius="12dp"
+                android:elevation="7dp"
+                android:layout_below="@id/accountNoLl"
+                android:background="@color/white"
+                android:layout_margin="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/verifiedIconPassBook"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_verified_black"
+                        app:tint="@color/successGreen"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginStart="2dp"
+                        android:background="@drawable/shape_circle_01"
+                        android:backgroundTint="@color/gray01"
+                        android:padding="12dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/verifiedIconPassBook"
+                        android:layout_marginStart="8dp"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        android:textColor="@color/black"
+                        android:text="Bank Proof/Passbook"
+                        android:layout_marginTop="16dp"/>
+
+                    <ImageView
+                        android:id="@+id/passBookIv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/verifiedIconPassBook"
+                        android:layout_marginTop="3dp"
+                        app:tint="@color/gray01"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_gallery_blac"/>
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/signatureCardView"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:cardCornerRadius="12dp"
+                android:elevation="7dp"
+                android:layout_below="@id/passbookCardView"
+                android:background="@color/white"
+                android:layout_margin="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/verifiedIconSign"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_verified_black"
+                        app:tint="@color/successGreen"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginStart="2dp"
+                        android:background="@drawable/shape_circle_01"
+                        android:backgroundTint="@color/gray01"
+                        android:padding="12dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/verifiedIconSign"
+                        android:layout_marginStart="8dp"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        android:textColor="@color/black"
+                        android:text="Signature"
+                        android:layout_marginTop="16dp"/>
+
+                    <ImageView
+                        android:id="@+id/signatureIv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/verifiedIconSign"
+                        android:layout_marginTop="3dp"
+                        app:tint="@color/gray01"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_gallery_blac"/>
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/verifiedBtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Seller Verified"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:elevation="10dp"
+        android:textAllCaps="false"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_circle_01"
+        android:elevation="20dp"
+        android:padding="5dp"
+        android:theme="@style/Widget.AppCompat.ProgressBar"
+        android:visibility="gone" />
+
+</RelativeLayout>

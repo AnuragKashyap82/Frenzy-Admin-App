@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="0dp"
+    android:layout_marginBottom="0dp"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/productImage"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_delivery_black"
+        app:civ_border_color="@color/colorPrimary"
+        app:civ_border_width="1dp" />
+
+    <TextView
+        android:id="@+id/shopName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shop Name"
+        android:layout_toStartOf="@id/notVerified"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_toEndOf="@id/productImage"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="18dp"/>
+
+    <TextView
+        android:id="@+id/sellerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="By Anurag Kashyap"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:textStyle="normal"
+        android:layout_below="@id/productImage"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"/>
+
+    <TextView
+        android:id="@+id/addressTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="address"
+        android:textColor="@color/gray02"
+        android:textSize="14dp"
+        android:textStyle="normal"
+        android:layout_below="@id/sellerName"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <ImageView
+        android:id="@+id/notVerified"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="12dp"
+        android:background="@drawable/ic_verified_black"
+        android:backgroundTint="@color/colorPrimary"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/addressTv"
+        android:background="@color/gray01"/>
+
+</RelativeLayout>
